@@ -3,8 +3,8 @@ import { Route, Switch, useLocation } from 'react-router-dom';
 import { ROUTES } from './config/ROUTES';
 import ProtectedRoute from './modules/common/components/ProtectedRoute';
 
-const LoginPage = lazy(() => import('./modules/auth/page/login'));
-const HomePage = lazy(() => import('./modules/home/page/home'));
+const LoginPage = lazy(() => import('./modules/auth/page/Login'));
+const HomePage = lazy(() => import('./modules/home/page/Home'));
 
 const ListRoutes = () => {
 

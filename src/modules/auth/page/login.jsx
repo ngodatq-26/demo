@@ -1,9 +1,22 @@
 import React from 'react'
+import LoginForm from '../components/LoginForm'
 
-const login = () => {
+const Login = () => {
+
+  const [loading,setLoading] = React.useState(false);
+
+  const OnLogin = React.useCallback((email, password) => {
+    setLoading(true);
+    console.log(email, password);
+    setLoading(false);
+  });
+
   return (
-    <div>trang login</div>
+    <div>
+      logo
+      <LoginForm OnLogin = {OnLogin} />
+    </div>
   )
 }
 
-export default login
+export default Login
